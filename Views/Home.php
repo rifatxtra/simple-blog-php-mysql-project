@@ -6,9 +6,9 @@
             <?php foreach ($posts as $post) {
             ?>
                 <div class="post-div flex flex-col gap-2 p-4 ">
-                    <img src="<?php echo '/uploads/' . $post['image']; ?>" alt="Blog Image Error" class="h-[240px] w-[336px] object-cover rounded-lg" />
+                    <img onclick="location.href='/blog/<?php echo $post['id']; ?>'" src="<?php echo '/uploads/' . $post['image']; ?>" alt="Blog Image Error" class="h-[240px] w-[336px] object-cover rounded-lg cursor-pointer" />
 
-                    <div class="flex flex-row gap-3 items-top text-black hover:text-purple-500">
+                    <div onclick="location.href='/blog/<?php echo $post['id']; ?>'" class="flex flex-row gap-3 items-top text-black hover:text-purple-500 cursor-pointer">
                         <h1 class="text-wrap font-bold">
                             <?php echo $post['title']; ?>
                         </h1>
