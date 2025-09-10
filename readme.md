@@ -1,4 +1,4 @@
-# 📝 Lemon Hive Blog Platform
+# 📝 Blog Platform
 
 This is a PHP-based blog platform with an admin panel for content management. The application features a responsive design, pagination, image uploads, and a clean user interface.
 
